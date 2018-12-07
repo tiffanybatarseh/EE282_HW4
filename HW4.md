@@ -221,7 +221,7 @@ plotCDF2 seq_small2.lengths seq_small2.png
 
 ![seq_small](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seq_small2.png)
 
-Sequence length distribution comparison
+Sequence length distribution comparison of the whole genome sequence lengths, only sequences greater than 100,000bp, and only sequences less than or equal to 100,000bp
 
 ```
 plotCDF2 seq_dmel_all.lengths seq_bigger2.lengths seq_small2.lengths seqlengths.png
