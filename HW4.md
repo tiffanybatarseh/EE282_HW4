@@ -313,7 +313,7 @@ Submitted the MUMmer analysis as a job through the HPC
 
 ###Loading of binaries via module load or PATH reassignment
 source /pub/jje/ee282/bin/.qmbashrc
-module load gnuplot
+module load gnuplot/4.6.0
 
 ###Query and Reference Assignment. State my prefix for output filenames
 REF="/pub/jje/ee282/tbatarse/hw4/dmel-all-chromosome-r6.24.ctg.fa"
@@ -324,7 +324,7 @@ PREFIX=${PREFIX}_$(basename ${QRY} .fa)
 
 nucmer -l 100 -c 125 -d 10 -banded -D 5 -prefix ${PREFIX} ${REF} ${QRY}
 mummerplot --fat --layout --filter -p ${PREFIX} ${PREFIX}.delta \
-  -R ${REF} -Q ${QRY} --postscript
+  -R ${REF} -Q ${QRY} --png
 
 ```
 
