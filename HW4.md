@@ -88,7 +88,7 @@ GC + geom_bar(mapping = aes(x=GC2$GC_Percentcut)) + labs(title="Sequence GC Dist
 
 ```
 
-![GC_wholegenome](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/GC_percent_bigger.png)
+![GC_wholegenome](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/GC_percent.png)
 
 Cumulative genome size from largest to smallest sequences for whole genome
 
@@ -139,7 +139,7 @@ GCbigplot <-ggplot(data=GCbig)
 GCbigplot + geom_bar(mapping = aes(x=GCbig$PercentCut)) + labs(title="Sequence GC Distribution for Sequences >100kb", x="GC Percentage", y="Count (Number of Contigs)") + theme_bw()+ theme(axis.text.x = element_text(angle = 60, hjust = 1))
 ```
 
-The plot file name is GC_percent_bigger.png
+![GC_bigger](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/GC_percent_bigger.png)
 
 Cumulative genome size from largest to smallest sequences for sequences > 100kb
 
@@ -192,7 +192,7 @@ GCsmallplot <-ggplot(data=GCsmall)
 GCsmallplot + geom_bar(mapping = aes(x=GCsmall$PercentCut)) + labs(title="Sequence GC Distribution for Sequences <=100kb", x="GC Percentage", y="Count (Number of Contigs)") + theme_bw()+ theme(axis.text.x = element_text(angle = 60, hjust = 1))
 
 ```
-The name of the image in my Github repository is GC_percent_Small.png
+![GC_wholegenome](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/GC_percent_Small.png)
 
 Cumulative genome size from largest to smallest sequences for sequences < or equal to 100kb
 
