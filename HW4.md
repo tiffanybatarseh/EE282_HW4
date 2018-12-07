@@ -328,7 +328,7 @@ mummerplot --fat --layout --filter -p ${PREFIX} ${PREFIX}.delta \
 
 ```
 
-![mummerimage](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/mummerpostscriptimage.png?raw=true)
+![mummerimage](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/flybase7_unitigs.png?raw=true)
 
 **Compare assembly to both the contig assembly and scaffold assembly from FlyBase using contiguity plot**
 
