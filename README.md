@@ -1,4 +1,4 @@
-# **HW4.md** This file contains the code, commentary, and answers for the homework
+## **HW4.md** This file contains the code, commentary, and answers for the homework
 
 **Bigseqlength.png** Sequence length distributions for sequences greater than 100,000 bp
 
