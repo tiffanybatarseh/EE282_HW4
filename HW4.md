@@ -350,6 +350,8 @@ plotCDF2 *.sorted.text /dev/stdout \
 | display
 ```
 
+![plotcdfimage](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/ONP_plotcdf2.png?raw=true)
+
 **Calculate BUSCO scores of both assemblies and compare them**
 
 To run BUSCO on the nanopore assembly of ISO1, I submitted it as a job on the HPC.
