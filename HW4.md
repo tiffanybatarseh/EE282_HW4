@@ -69,6 +69,8 @@ Lengthplot <-ggplot(data=Length)
 Lengthplot + geom_bar(mapping = aes(x=Cut)) + labs(title="Sequence Length Distribution", x="Length", y="Count (Number of Contigs)") + theme_bw()+ theme(axis.text.x = element_text(angle = 60, hjust = 1))
 ```
 
+![seq_whole](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seq_all.png)
+
 Sequence GC distribution for whole genome
 ```
 bioawk -c fastx '{ print $name, gc($seq) }' dmel-all-chromosome-r6.24.fasta.gz > GC_wholegenome.txt
@@ -101,6 +103,8 @@ bioawk -c fastx ' { print length($seq) } ' dmel-all-chromosome-r6.24.fasta.gz \
 plotCDF2 seq_dmel_all.lengths seq_all.png
 ```
 
+![seq_whole](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seq_all.png)
+
 **Sequences > 100kb**
 
 Sequence length distribution for sequences > 100kb
@@ -119,6 +123,8 @@ bigplot <-ggplot(data=big)
 
 bigplot + geom_bar(mapping = aes(x=cut)) + labs(title="Sequence Length Distribution", x="Length", y="Count (Number of Contigs)") + theme_bw()+ theme(axis.text.x = element_text(angle = 60, hjust = 1))
 ```
+
+![lengths_bigger](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seq_bigger2.png)
 
 Sequence GC distribution for sequences > 100kb
 
@@ -151,6 +157,8 @@ bioawk -c fastx ' { print length($seq) } ' bigger.FASTA \
 
 plotCDF2 seq_bigger2.lengths seq_bigger2.png
 ```
+
+![seq_bigger](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seq_bigger2.png)
 
 **Sequences < or equal to 100kb**
 
@@ -205,11 +213,15 @@ bioawk -c fastx ' { print length($seq) } ' small.fasta \
 plotCDF2 seq_small2.lengths seq_small2.png
 ```
 
+![seq_small](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seq_small2.png)
+
 Sequence length distribution comparison
 
 ```
 plotCDF2 seq_dmel_all.lengths seq_bigger2.lengths seq_small2.lengths seqlengths.png
 ```
+
+![seq_together](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seqlengths.png)
 
 # Genome Assembly
 
