@@ -12,6 +12,8 @@
 
 **Small_seqlength.png** Sequence lengths distributions for sequences less than or equal to 100,000bp
 
+**mummerpostscriptimage.png** Mummer post script image screenshot
+
 **seq_all.png** Cumulative lengths plot for the whole genome
 
 **seq_bigger2.png** Cumulative lengths plot for sequences greater than 100,000bp
