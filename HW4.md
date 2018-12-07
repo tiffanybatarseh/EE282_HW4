@@ -6,6 +6,7 @@ Download most current assembly
 wget ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/fasta/dmel-all-chromosome-r6.24.fasta.gz
 ```
 
+
 ### Calculate the following for all sequences less than or equal to 100kb and all sequences greater than 100 kb
 
 Calculating total number of nucleotides, total number of Ns, and total number of sequences.
@@ -28,6 +29,7 @@ L count: mean 0.0 sd 0.0
 
 ```
 Total number of nucleotides: 137547960, total number of N's: 490385, and total number of sequences: 7.
+
 
 
 **Sequences less than or equal to 100000**
@@ -105,6 +107,7 @@ plotCDF2 seq_dmel_all.lengths seq_all.png
 
 ![seq_whole](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seq_all.png)
 
+
 **Sequences > 100kb**
 
 Sequence length distribution for sequences > 100kb
@@ -159,6 +162,7 @@ plotCDF2 seq_bigger2.lengths seq_bigger2.png
 ```
 
 ![seq_bigger](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seq_bigger2.png)
+
 
 **Sequences < or equal to 100kb**
 
@@ -264,6 +268,7 @@ awk ' $0 ~/^S/ { print ">" $2" \n" $3 } ' $processed/reads.gfa \
 > $processed/unitigs.fa
 ```
 
+
 **Calculate N50**
 
 ```
@@ -279,6 +284,7 @@ Compare the N50 to the Flybase's contig N50
 Flybase assembly of ISO1 N50 = 21,485,538
 
 ONT assembly of ISO1 N50 = 4,492,246
+
 
 **Compare assembly to contig assembly from FlyBase using dotplot with MUMmer**
 
@@ -322,6 +328,7 @@ mummerplot --fat --layout --filter -p ${PREFIX} ${PREFIX}.delta \
 
 ```
 
+
 **Compare assembly to both the contig assembly and scaffold assembly from FlyBase using contiguity plot**
 
 ```
@@ -351,6 +358,7 @@ plotCDF2 *.sorted.text /dev/stdout \
 ```
 
 ![plotcdfimage](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/ONP_plotcdf2.png?raw=true)
+
 
 **Calculate BUSCO scores of both assemblies and compare them**
 
