@@ -88,7 +88,7 @@ GC + geom_bar(mapping = aes(x=GC2$GC_Percentcut)) + labs(title="Sequence GC Dist
 
 ```
 
-The plot file name is GC_percent.png
+![GC_wholegenome](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/GC_percent_bigger.png)
 
 Cumulative genome size from largest to smallest sequences for whole genome
 
