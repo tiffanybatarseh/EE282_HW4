@@ -229,6 +229,10 @@ plotCDF2 seq_dmel_all.lengths seq_bigger2.lengths seq_small2.lengths seqlengths.
 
 ![seq_together](https://github.com/tiffanybatarseh/EE282_HW4/blob/master/seqlengths.png)
 
+### Comments on "Summarize partitions of a genome assembly"
+
+Perfect.
+
 # Genome Assembly
 
 **Assemble a genome from MinION reads**
